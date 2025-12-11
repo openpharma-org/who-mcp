@@ -21,13 +21,13 @@ A Model Context Protocol (MCP) server that provides access to the World Health O
 ### From NPM
 
 ```bash
-npm install -g @uh-joan/who-mcp-server
+npm install -g @openpharma-org/who-mcp
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/uh-joan/who-mcp-server.git
+git clone https://github.com/openpharma-org/who-mcp.git
 cd who-mcp-server
 npm install
 ```
@@ -43,7 +43,7 @@ Add this server to your Claude Desktop configuration:
   "mcpServers": {
     "who-health": {
       "command": "npx",
-      "args": ["@uh-joan/who-mcp-server"]
+      "args": ["@openpharma-org/who-mcp"]
     }
   }
 }
@@ -54,7 +54,7 @@ Add this server to your Claude Desktop configuration:
 Run the server directly:
 
 ```bash
-npx @uh-joan/who-mcp-server
+npx @openpharma-org/who-mcp
 ```
 
 ## API Reference
@@ -242,7 +242,7 @@ Dim1 eq null  // No disaggregation data
 ### Setup
 
 ```bash
-git clone https://github.com/uh-joan/who-mcp-server.git
+git clone https://github.com/openpharma-org/who-mcp.git
 cd who-mcp-server
 npm install
 ```
@@ -301,9 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 🐛 [Report Issues](https://github.com/uh-joan/who-mcp-server/issues)
-- 📖 [Documentation](https://github.com/uh-joan/who-mcp-server)
-- 💬 [Discussions](https://github.com/uh-joan/who-mcp-server/discussions)
+- 🐛 [Report Issues](https://github.com/openpharma-org/who-mcp/issues)
+- 📖 [Documentation](https://github.com/openpharma-org/who-mcp)
+- 💬 [Discussions](https://github.com/openpharma-org/who-mcp/discussions)
 - 🌍 [WHO GHO Data](https://www.who.int/data/gho)
 
 ---
