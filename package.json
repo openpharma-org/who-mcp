@@ -1,0 +1,50 @@
+{
+  "name": "@openpharma-org/who-mcp-server",
+  "version": "0.0.1",
+  "description": "MCP server for WHO Global Health Observatory (GHO) data access via the OData API. Provides search and retrieval of health indicators, country data, and regional statistics from the World Health Organization using modern OData protocol.",
+  "main": "src/index.js",
+  "bin": {
+    "who-mcp-server": "src/index.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "prebuild": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "who",
+    "world-health-organization",
+    "health-data",
+    "global-health-observatory",
+    "odata-api",
+    "health-indicators",
+    "epidemiology",
+    "public-health",
+    "statistics",
+    "model-context-protocol"
+  ],
+  "author": "Joan <uh-joan>",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openpharma-org/who-mcp-server"
+  },
+  "homepage": "https://github.com/openpharma-org/who-mcp-server",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "axios": "^1.10.0",
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
