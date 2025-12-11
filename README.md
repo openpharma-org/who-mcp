@@ -1,7 +1,4 @@
-# WHO MCP Server
-
-[![npm version](https://badge.fury.io/js/%40uh-joan%2Fwho-mcp-server.svg)](https://badge.fury.io/js/%40uh-joan%2Fwho-mcp-server)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Unofficial WHO MCP Server
 
 A Model Context Protocol (MCP) server that provides access to the World Health Organization's Global Health Observatory (GHO) data via the OData API. This server enables AI assistants and applications to search, retrieve, and analyze comprehensive health indicators, country statistics, and regional data from WHO's extensive health database.
 
@@ -15,22 +12,6 @@ A Model Context Protocol (MCP) server that provides access to the World Health O
 - 🌐 **WHO Regions**: Filter data by WHO regional classifications
 - ⚡ **OData Protocol**: Built on WHO's modern OData API for efficient data access
 - 🔌 **MCP Compatible**: Works seamlessly with Claude Desktop and other MCP clients
-
-## Installation
-
-### From NPM
-
-```bash
-npm install -g @openpharma-org/who-mcp
-```
-
-### From Source
-
-```bash
-git clone https://github.com/openpharma-org/who-mcp.git
-cd who-mcp-server
-npm install
-```
 
 ## Usage
 
@@ -47,14 +28,6 @@ Add this server to your Claude Desktop configuration:
     }
   }
 }
-```
-
-### Direct Usage
-
-Run the server directly:
-
-```bash
-npx @openpharma-org/who-mcp
 ```
 
 ## API Reference
@@ -232,38 +205,6 @@ Dim1 ne null  // Has disaggregation data
 Dim1 eq null  // No disaggregation data
 ```
 
-## Development
-
-### Requirements
-
-- Node.js ≥ 18.0.0
-- npm or yarn
-
-### Setup
-
-```bash
-git clone https://github.com/openpharma-org/who-mcp.git
-cd who-mcp-server
-npm install
-```
-
-### Running Locally
-
-```bash
-npm start
-```
-
-### Project Structure
-
-```
-who-mcp-server/
-├── src/
-│   ├── index.js     # MCP server implementation
-│   └── who-api.js   # WHO OData API interaction
-├── package.json
-└── README.md
-```
-
 ## Data Sources
 
 This server accesses data from:
@@ -279,33 +220,3 @@ This server accesses data from:
 - Cache responses when appropriate to reduce API calls
 - Use appropriate `$top` parameters to limit large data sets
 - Monitor API performance and adjust queries as needed
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built on [WHO Global Health Observatory](https://www.who.int/data/gho) data
-- Uses the [OData Protocol](https://www.odata.org/) for standardized API access
-- Built with the [Model Context Protocol](https://modelcontextprotocol.io/) specification
-- Thanks to the WHO team for maintaining this invaluable global health resource
-
-## Support
-
-- 🐛 [Report Issues](https://github.com/openpharma-org/who-mcp/issues)
-- 📖 [Documentation](https://github.com/openpharma-org/who-mcp)
-- 💬 [Discussions](https://github.com/openpharma-org/who-mcp/discussions)
-- 🌍 [WHO GHO Data](https://www.who.int/data/gho)
-
----
-
-**Note**: This is an unofficial tool. Please respect WHO's data usage guidelines and terms of service when using this server.
