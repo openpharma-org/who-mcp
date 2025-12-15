@@ -4,27 +4,22 @@ A Model Context Protocol (MCP) server that provides access to the World Health O
 
 ## Features
 
-- 🌍 **Global Health Data**: Access WHO's comprehensive health indicators and statistics
-- 📊 **Rich Health Metrics**: Life expectancy, mortality rates, disease burden, health systems data
-- 🔍 **Advanced Search**: Find health indicators by keywords and topics
-- 🏥 **Country-Specific Data**: Retrieve health data for specific countries and regions
-- 📈 **Time Series Data**: Access historical health trends and time-based analysis
-- 🌐 **WHO Regions**: Filter data by WHO regional classifications
-- ⚡ **OData Protocol**: Built on WHO's modern OData API for efficient data access
-- 🔌 **MCP Compatible**: Works seamlessly with Claude Desktop and other MCP clients
+- **Global Health Data**: Access WHO's comprehensive health indicators and statistics
+- **Rich Health Metrics**: Life expectancy, mortality rates, disease burden, health systems data
+- **Advanced Search**: Find health indicators by keywords and topics
+- **Country-Specific Data**: Retrieve health data for specific countries and regions
+- **Time Series Data**: Access historical health trends and time-based analysis
+- **WHO Regions**: Filter data by WHO regional classifications
+- **OData Protocol**: Built on WHO's modern OData API for efficient data access
 
 ## Usage
-
-### Claude Desktop Integration
-
-Add this server to your Claude Desktop configuration:
 
 ```json
 {
   "mcpServers": {
-    "who-health": {
-      "command": "npx",
-      "args": ["@openpharma-org/who-mcp"]
+    "who-mcp-server": {
+      "command": "node",
+      "args": ["/path/to/who-mcp-server/src/index.js"]
     }
   }
 }
