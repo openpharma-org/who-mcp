@@ -19,7 +19,7 @@ A Model Context Protocol (MCP) server that provides access to the World Health O
   "mcpServers": {
     "who-mcp-server": {
       "command": "node",
-      "args": ["/path/to/who-mcp-server/src/index.js"]
+      "args": ["/path/to/who-mcp-server/build/index.js"]
     }
   }
 }
